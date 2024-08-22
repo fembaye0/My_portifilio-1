@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+<head>
+
+    <title>Feruz - Home</title>
+    <link rel="stylesheet" href="My-css/style.css">
+    <link rel="stylesheet" href="My-css/header.css">
+    <link rel="stylesheet" href="My-css/footer.css">
+
+</head>
+
+<body class="body">
+
+    <div class="header">
+        <!-- <div class="header-div"> -->
+
+        <div class="Home">Home </div>
+        <div class="Gateway Reflection Page">
+            <a href="GatewayReflection.html">
+                Gateway Reflection Page </a>
+        </div>
+        <div class="Contact Page">
+            <a href="contact.html"> Contact Page</a>
+        </div>
+        <div class="Resume Page">
+            <a href="resume.html">Resume Page</a>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="wecome">
+        <h1>WELCOME TO FERUZ'S PAGE</h1>
+    </div>
+
+
+    <div class="container">
+        <div class="slide">
+            <img src="image/IMG_3806.jpg" class="slide-image" alt="Slide 1">
+        </div>
+
+        <div class="slide">
+            <img src="image/IMG_6284.jpeg" class="slide-image" alt="Slide 2">
+        </div>
+
+        <div class="slide">
+            <img src="image/IMG_7522.jpg" class="slide-image" alt="Slide 3">
+        </div>
+
+
+    </div>
+
+    <!-- <div class="main-aboutme"> -->
+    <div class="biography">
+
+        <h1>Bio-Graphy</h1>
+
+
+        <p>
+            I am a dedicated aspiring software developer from Charlotte with a growing passion for coding and
+            technology. Over the past two years, I have strengthened my skills in Excel, earning a certificate of
+            proficiency that underscores my commitment to mastering essential technical tools. My professional
+            development began at Central Piedmont College, where I gained valuable insights into coding, SQL, and data
+            analysis, learning the importance of personal branding and professional interaction. I enjoy working on
+            personal projects, such as creating websites with HTML and CSS and have completed numerous certificates and
+            projects through platforms like Forage. I am furthering my technical skills in HTML and CSS through the
+            Gateway program. Additionally, my experience as a classroom facilitator at Our Bridge has allowed me to
+            contribute to the education and growth of others. Looking ahead, I am eager to continue my journey in the IT
+            field, with a clear goal of becoming a software developer in the next four years, remaining dedicated to
+            learning, growing, and making a meaningful impact in the industry.
+        </p>
+
+
+
+
+
+    </div>
+
+
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/" target="_blank" class="social-icon">
+                <img src="image/Footer-icon/Facebook.png" alt="Facebook">
+            </a>
+            <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                <img src="image/Footer-icon/IG.webp" alt="Instagram">
+            </a>
+
+            <a href="https://linkedin.com/in/feruz-embaye" target="_blank" class="social-icon">
+                <img src="image/Footer-icon/linkedin-icon.png" alt="Likedin">
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+<script>
+    let currentSlideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+        let slides = document.getElementsByClassName("slide");
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";  // Hide all slides
+        }
+        currentSlideIndex++;
+        if (currentSlideIndex > slides.length) {currentSlideIndex = 1}  // Reset to first slide if at the end
+        slides[currentSlideIndex - 1].style.display = "block";  // Display the current slide
+        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+    }
+</script>/

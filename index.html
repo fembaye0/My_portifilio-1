@@ -15,7 +15,7 @@
 <body class="body">
 
     <div class="header">
-        <!-- <div class="header-div"> -->
+       
 
         <div class="Home">Home </div>
         <div class="Gateway Reflection Page">
@@ -55,7 +55,7 @@
 
     </div>
 
-    <!-- <div class="main-aboutme"> -->
+  
     <div class="biography">
 
         <h1>Bio-Graphy</h1>
@@ -107,11 +107,11 @@
     function showSlides() {
         let slides = document.getElementsByClassName("slide");
         for (let i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";  // Hide all slides
+            slides[i].style.display = "none";  
         }
         currentSlideIndex++;
-        if (currentSlideIndex > slides.length) {currentSlideIndex = 1}  // Reset to first slide if at the end
-        slides[currentSlideIndex - 1].style.display = "block";  // Display the current slide
-        setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        if (currentSlideIndex > slides.length) {currentSlideIndex = 1}  
+        slides[currentSlideIndex - 1].style.display = "block";  
+        setTimeout(showSlides, 3000); 
     }
 </script>/
